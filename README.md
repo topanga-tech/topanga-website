@@ -1,4 +1,4 @@
-# mideo.app
+# topanga.tech
 
 Landing page for Topanga, a mobile development and consulting company.
 
