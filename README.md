@@ -1,7 +1,7 @@
 # mideo.app
 
-Landing page for Mideo, an app I for iOS and Android.
+Landing page for Topanga, a mobile development and consulting company.
 
-App Store for iOS: https://itunes.apple.com/us/app/id1358135284
+[Topanga's Website](https://topanga.tech)
 
-Google Play Store for Android: https://play.google.com/store/apps/details?id=io.synople.mideo
+Thanks to [Mideo](https://mideo.app) for the source!
