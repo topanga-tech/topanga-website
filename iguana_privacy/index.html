@@ -27,6 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
         }
 
         .header .logo {
@@ -36,15 +37,100 @@
             text-decoration: none;
         }
 
-        .header nav a {
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .desktop-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .desktop-menu a {
             color: white;
             text-decoration: none;
             margin-left: 2rem;
             opacity: 0.9;
         }
 
-        .header nav a:hover {
+        .header .desktop-menu a:hover {
             opacity: 1;
+        }
+
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+            margin-left: 2rem;
+            z-index: 2;
+        }
+
+        .hamburger-icon {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+
+        /* Hamburger animation */
+        .hamburger-menu.active .hamburger-icon span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .hamburger-menu.active .hamburger-icon span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.active .hamburger-icon span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: rgba(137, 74, 139, 1.0);
+            width: 200px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            opacity: 0.9;
+        }
+
+        .mobile-menu a:hover {
+            opacity: 1;
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .mobile-menu.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .header .desktop-menu {
+                display: none;
+            }
+
+            .hamburger-menu {
+                display: block;
+            }
         }
 
         /* Container styling */
@@ -100,9 +186,22 @@
     <header class="header">
         <a href="#" class="logo">topanga</a>
         <nav>
+            <div class="desktop-menu">
+                <a href="../iguana_terms/index.html">Terms of Use</a>
+                <a href="../iguana_privacy/index.html">Privacy Policy</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
             <a href="../iguana_terms/index.html">Terms of Use</a>
             <a href="../iguana_privacy/index.html">Privacy Policy</a>
-        </nav>
+        </div>
     </header>
 
     <div class="container">
@@ -130,5 +229,28 @@
             <p>If you have any questions about this Privacy Policy, please contact us at <strong>iguana.alerts@gmail.com</strong>.</p>
         </div>
     </div>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburgerMenu.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            mobileMenu.classList.toggle('show');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!mobileMenu.contains(e.target) && !hamburgerMenu.contains(e.target)) {
+                mobileMenu.classList.remove('show');
+                hamburgerMenu.classList.remove('active');
+            }
+        });
+
+        // Prevent clicks inside mobile menu from closing it
+        mobileMenu.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    </script>
 </body>
 </html>
