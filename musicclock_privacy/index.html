@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Clock for Spotify - Privacy Policy</title>
+    <link rel="icon" href="appicon.png" title="Logo" width="24" height="24">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: white;
+        }
+
+        /* Header styling */
+        .header {
+            background-color: #1DB954;
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+        }
+
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .desktop-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .desktop-menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            opacity: 0.9;
+        }
+
+        .header .desktop-menu a:hover {
+            opacity: 1;
+        }
+
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+            margin-left: 2rem;
+            z-index: 2;
+        }
+
+        .hamburger-icon {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+
+        /* Hamburger animation */
+        .hamburger-menu.active .hamburger-icon span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .hamburger-menu.active .hamburger-icon span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.active .hamburger-icon span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #1DB954;
+            width: 200px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            opacity: 0.9;
+        }
+
+        .mobile-menu a:hover {
+            opacity: 1;
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .mobile-menu.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .header .desktop-menu {
+                display: none;
+            }
+
+            .hamburger-menu {
+                display: block;
+            }
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Content styling */
+        #privacy_content {
+            background-color: white;
+            padding: 1rem 0;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 2.5rem;
+            color: #1DB954;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: #333;
+            margin: 2rem 0 1rem;
+            font-weight: 500;
+        }
+
+        /* Paragraph styling */
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        /* List styling */
+        ul {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">topanga</a>
+        <nav>
+            <div class="desktop-menu">
+                <a href="../musicclock_terms/index.html">Terms of Use</a>
+                <a href="../musicclock_privacy/index.html">Privacy Policy</a>
+                <a href="../index.html">Support</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <a href="../musicclock_terms/index.html">Terms of Use</a>
+            <a href="../musicclock_privacy/index.html">Privacy Policy</a>
+            <a href="../index.html">Support</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="privacy_content">
+            <h1>Music Clock for Spotify Privacy Policy</h1>
+            <p><strong>Effective Date:</strong> March 13, 2025</p>
+            <p>Music Clock for Spotify lets you choose songs, playlists, or artists from Spotify and set alarms that start with your selected music. This Privacy Policy explains how Music Clock collects, uses, and protects your information when you use the app.</p>
+
+            <p><strong>Information Collection and Use</strong></p>
+            <p>To play music from Spotify at your scheduled alarms, Music Clock uses Spotify's authorization (OAuth) to request only the minimum permissions required to control playback on your devices. We do not collect or store your Spotify password.</p>
+            <ul>
+                <li>We may receive a limited-access token from Spotify to control playback on your devices.</li>
+                <li>Alarm schedules and settings are stored locally on your device.</li>
+                <li>We do not store your playlists, listening history, or personal profile data on our servers.</li>
+                <li>We may collect anonymous usage analytics to improve the app experience.</li>
+            </ul>
+
+            <p><strong>Data Storage and Security</strong></p>
+            <p>Access tokens are stored securely on your device and are not shared with third parties. We implement appropriate security measures to protect data handled by the app.</p>
+
+            <p><strong>Third-Party Services</strong></p>
+            <p>Music Clock integrates with Spotify to enable playback. Spotify handles your account information under its own policies. We do not share user-provided data with third parties.</p>
+
+            <p><strong>Children's Privacy</strong></p>
+            <p>Music Clock is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13. If we discover such data, we will delete it immediately.</p>
+
+            <p><strong>Changes to This Privacy Policy</strong></p>
+            <p>We may update this Privacy Policy periodically. Any changes will be posted on this page, and continued use of Music Clock signifies your acceptance of the updated policy.</p>
+
+            <p><strong>Contact Us</strong></p>
+            <p>If you have any questions about this Privacy Policy, please contact us at <strong>hello@topanga.tech</strong>.</p>
+        </div>
+    </div>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburgerMenu.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            mobileMenu.classList.toggle('show');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!mobileMenu.contains(e.target) && !hamburgerMenu.contains(e.target)) {
+                mobileMenu.classList.remove('show');
+                hamburgerMenu.classList.remove('active');
+            }
+        });
+
+        // Prevent clicks inside mobile menu from closing it
+        mobileMenu.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>
