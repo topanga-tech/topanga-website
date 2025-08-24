@@ -1,0 +1,56 @@
+.developer-router-links {
+	background: #F2F2F2;
+}
+
+.developer-router-links .section-content {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #D6D6D6;
+}
+
+.developer-router-links a.block {
+	width: 216px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.developer-router-links.jp a.block {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.router-icon {
+	margin: 3px auto 16px;
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+}
+
+.router-icon-bug-reporting {
+	background-image: url('/assets/elements/icons/wwdr-unified/bugs.svg');
+}
+
+.router-icon-phone {
+	background-image: url('/assets/elements/icons/wwdr-unified/phone.svg');
+}
+
+.router-icon-chat {
+	background-image: url('/assets/elements/icons/wwdr-unified/chat_bubble.svg');
+}
+
+.router-icon-service {
+	background-image: url('/assets/elements/icons/wwdr-unified/service.svg');
+}
+
+.router-icon-forums {
+	background-image: url('/assets/elements/icons/wwdr-unified/forum.svg');
+}
+
+@media only screen and (max-width: 480px) {
+	.developer-router-links .small-6 {
+		width: 100%;
+	}
+}

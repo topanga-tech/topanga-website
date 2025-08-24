@@ -1,0 +1,490 @@
+#overview .link-overview,
+#articles .link-articles,
+#development .link-development,
+#membership .link-membership,
+#distribution .link-distribution {
+	color: rgba(51, 51, 51, 0.6);
+	pointer-events: none;
+}
+
+#globalfooter .footer-breadory {
+	border-top: none;
+}
+
+#main .footnote:hover {
+	color: #888;
+}
+
+.bg-light {
+	background-color: #fafafa;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 1.25;
+}
+
+h4 {
+	font-size: 1.6em;
+	line-height: 1.4em;
+}
+
+article h1+h2 {
+	margin-top: 1em;
+}
+
+article a {
+	white-space: nowrap;
+}
+
+article a.wrap {
+	white-space: normal;
+}
+
+@media only screen and (max-width: 735px) {
+	article a {
+		white-space: normal;
+	}
+	#section-contact {
+		border-left: none;
+	}
+}
+
+ul.gutter-right {
+	margin-right: 1em;
+}
+ul.gutter-left {
+	margin-left: 2em;
+}
+@media only screen and (max-width: 735px) {
+	ul.gutter-right {
+		margin-right: 0;
+	}
+	ul.gutter-left {
+		margin-left: 1.17647em;
+	}
+}
+
+#section-overview {
+	padding-top: 1.5em;
+}
+
+#section-overview .typography-caption-headline {
+	margin-top: 0.3em;
+	font-size: 14.11px;
+}
+
+.typography-subsection-headline {
+    color: #1DB954;
+    font-weight: bold;
+}
+
+.typography-hero-headline {
+    color: #1DB954;
+    font-weight:bolder;
+}
+
+
+.support-topic-link {
+	display: block;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	border-radius: 3px;
+	-webkit-transition: background-color 0.2s ease;
+	-moz-transition: background-color 0.2s ease;
+	-o-transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease;
+	color: #666;
+}
+
+.support-topic-link:hover {
+	text-decoration: none;
+	background-color: #F8F8F8;
+}
+
+.support-article-links ul {
+	margin: 0;
+}
+
+.support-article-links a {
+	display: block;
+	border: 1px solid #e6e6e6;
+	border-radius: 3px;
+	padding: 10px 15px 5px;
+	margin: 0 0.75em 1.5em;
+	white-space: normal;
+	color: #333;
+	-webkit-transition: border-color 0.2s ease;
+	-moz-transition: border-color 0.2s ease;
+	-o-transition: border-color 0.2s ease;
+	transition: border-color 0.2s ease;
+}
+
+.support-article-links a:hover {
+	text-decoration: none;
+	border-color: #333;
+}
+
+.support-article-links a li.links.small {
+	margin: 0;
+}
+
+#appReviewStatus table td, #appReviewStatus table th {
+	text-align: right !important;
+}
+
+.chart {
+	text-align: center;
+}
+
+.chart svg {
+	margin: 0 auto;
+	display: block;
+}
+
+.chart svg tspan {
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 735px) {
+	#section-contact, #section-bugs {
+		padding: 2em 1em !important;
+		margin: 0 !important;
+		border-top: 1px solid #E3E3E3;
+		text-align: center;
+	}
+	#section-bugs, #section-forums {
+		padding: 2em 1em !important;
+		margin: 0 !important;
+		text-align: center;
+	}
+	.support-topic-link {
+		text-align: center;
+	}
+	#section-overview .column.large-4 {
+		padding: 2em;
+	}
+	#section-bugs img, #section-contact img, #section-forums img, #section-overview img {
+		margin: 1em auto 2em;
+	}
+	.chart {
+		padding-top: 2em;
+	}
+}
+
+.section-sandbox ul {
+	margin-bottom: 0.7em;
+}
+
+.section-sandbox ol {
+	margin-bottom: 1.5em;
+}
+
+.section-sandbox .sandbox-support ul,
+.section-signing .best-practices,
+.section-forums .guidelines {
+	padding-left: 1.3em;
+}
+
+.section-sandbox .sandbox-test-web {
+	margin-top: 1.5em;
+}
+
+.section-sandbox .sandbox-test-web ul {
+	margin-right: 1em;
+}
+
+.section-sandbox .sandbox-test-web+h2,
+.section-sandbox #test-cards-pos+h2,
+.section-signing .best-practices+h2,
+.section-forums .guidelines+p {
+	margin-top: 1.4em;
+}
+
+.section-dev-resources .row-guides {
+	margin-top: 0.75em;
+}
+
+.section-dev-resources .row-videos {
+	margin-top: 1.4em;
+}
+
+ul.tight li {
+	line-height: 1.2em;
+	margin-bottom: 1.2em;
+}
+
+.main ul:not(.compound-item-list) li:not(:last-child),
+.main ol:not(.compound-item-list) li:not(:last-child) {
+	margin-bottom: .5em;
+}
+
+ul.compound-item-list > li,
+ol.compound-item-list > li {
+	margin-bottom: 1.2em;
+}
+
+@media only screen and (max-width: 735px) {
+	.main ul:not(.compound-item-list) li,
+	.main ol:not(.compound-item-list) li {
+		margin-bottom: .5em;
+	}
+}
+
+#itunes-connect .main li:not(:last-child) {
+	margin-bottom: 0;
+}
+
+table {
+	width: 100%;
+	margin: 1em 0;
+}
+
+table th, table td {
+	padding: 1em 0;
+	border-bottom: 1px solid #ccc;
+}
+
+th.header {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.285em;
+	background: none;
+	text-align: left;
+}
+
+th.fixed-width {
+	width: 128px;
+	font-size: 0.8571em;
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
+
+td:first-child {
+	text-align: left;
+}
+
+#compare-table th.fixed-width {
+	width: 150px;
+}
+
+#test-cards-pos {
+	margin-top: 3em;
+}
+
+#teams .divider-last {
+	margin-top: 2em;
+	margin-bottom: -0.75em;
+	border-bottom: 1px solid #d6d6d6;
+}
+#teams .section-tables th.fixed-width {
+	width: 70px;
+}
+#teams span.plus {
+	display: inline-block;
+	margin-top: -4px;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+#teams .section-tables .footnote strong,
+#teams .section-tables .footnote span {
+	color: #000;
+}
+#teams .section-tables h4 {
+	margin-top: 2.8em;
+	font-variant: all-small-caps;
+}
+#teams .section-tables h4 + table {
+	margin-top: 0;
+}
+#teams h2 + h3,
+#teams .section-tables table + h3 {
+	margin-top: 1.4em;
+}
+#teams .section-tables h3 + h4 {
+	margin-top: 0.75em;
+}
+#teams .section-tables tbody tr:nth-of-type(odd) {
+	background-color: #fafafa;
+}
+@media only screen and (max-width: 735px) {
+	#teams .section-tables {
+		overflow-x: scroll;
+	}
+	#teams .section-tables table {
+		min-width: 576px;
+	}
+}
+
+#test-cards-pos th.fixed-width {
+	width: 240px;
+	font-size: 1em;
+}
+
+#test-cards-pos th.fixed-width-small {
+	width: 160px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#test-cards-pos th, #test-cards-pos td {
+	text-align: left;
+	vertical-align: top;
+	padding-right: 1em;
+}
+
+#test-cards-pos th.text-center,
+#test-cards-pos td.text-center {
+	text-align: center;
+}
+
+table.capabilities th.fixed-width {
+	width: 228px;
+}
+
+table.app-previews,
+table.stickers {
+	margin: 1em auto 2em;
+}
+
+table.app-previews th,
+table.stickers th {
+	background: rgba(240, 240, 240, 0.9);
+	padding: 0.5em 10px;
+	font-weight: 600;
+}
+
+table.app-previews th:not(:first-of-type),
+table.stickers th:not(:first-of-type) {
+	text-align: center;
+}
+
+table.app-previews .device {
+	width: 40%;
+	border: 1px solid #F0F0F0;
+	padding-left: 10px;
+}
+
+table.app-previews .spec,
+table.stickers .spec {
+	width: 30%;
+	border: 1px solid #E6E6E6;
+}
+
+table.stickers .size {
+	padding-left: 10px;
+}
+
+/* ========== Xcode ========== */
+#xcode ul.links {
+	margin-bottom: 0;
+}
+@media only screen and (max-width: 1068px) {
+	#xcode ul.links.gutter {
+		margin-left: 20px;
+	}
+}
+@media only screen and (max-width: 735px) {
+	#xcode ul.links.gutter {
+		margin-left: 0;
+	}
+}
+
+
+/* ========== beta-software/install-beta ========== */
+#install-beta .row-nav a {
+	display: inline-block;
+	cursor: pointer;
+	margin: 3em 0;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	width: 7em;
+	padding: 1em 0;
+}
+
+#install-beta .row-nav a:hover {
+	border: 1px solid #0070c9;
+}
+
+@media only screen and (max-width: 735px) {
+	#install-beta .row-nav {
+		margin-top: 1em;
+	}
+	#install-beta .row-nav a {
+		margin: 0 1em 1em 0;
+	}
+}
+
+
+/* ========== Grid Changes ========== */
+#main > article {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+#main > article > section.section {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+#main > article > section.section:first-of-type {
+	padding-top: 0;
+}
+#main > article > section.section:last-of-type {
+	padding-bottom: 0;
+}
+
+#main > section.section {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+section .section-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media only screen and (max-width: 1068px) {
+  section .section-content .row {
+    margin-left: 0;
+    margin-right: 0; }
+}
+@media only screen and (max-width: 735px) {
+  section .section-content .row {
+    margin-left: 0;
+    margin-right: 0; }
+}
+
+section .section-content .row > .column {
+  padding: 0;
+}
+@media only screen and (max-width: 1068px) {
+  section .section-content .row > .column {
+    padding: 0; }
+}
+@media only screen and (max-width: 735px) {
+  section .section-content .row > .column {
+    padding: 0; }
+}
+
+
+/** FOOTER **/
+.international-links {
+	margin: 15px 0 -5px;
+	text-align: center;
+}
+.international-links a {
+	margin: 0 7px;
+	font-size: 12px !important;
+}
+.international-links a.selected {
+	color: #888;
+}
